@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Le minion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="graphics/Baby Feet-48.png" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/w3-main.css">
+
+  <script src="js/progressbar.js"></script>
+
+  <!-- Google  Analytics -->
+    <script>
+      function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-79722101-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79722101-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-opennav w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#top" class="w3-bar-item w3-button w3-padding-large w3-white">Top</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+
+    <a href="#Grid1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-center">Assembly</a>
+    <a href="#Grid2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-center">Countdown</a>
+    <a href="#Grid3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-center">Sneakpeak</a>
+
+    <!--<a href="media/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">| Media</a>-->
+    <!--<a href="achievements/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Achievements</a>-->
+    <a href="learning/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Learning</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#Grid1" class="w3-bar-item w3-button w3-padding-large">Assembly</a>
+    <a href="#Grid2" class="w3-bar-item w3-button w3-padding-large">Countdown</a>
+    <a href="#Grid3" class="w3-bar-item w3-button w3-padding-large">Sneakpeak</a>
+    <hr>
+    <a href="learning/" class="w3-bar-item w3-button w3-padding-large">Learning</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center w3-padding-128">
+  <h1 class="w3-margin w3-jumbo">Game of life</h1>
+  <p class="w3-xlarge">...Or What is happening?!</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="#Grid1">Get Started</a></button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="Grid1">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Baby-assembly in progress...</h1>
+       <div class="w3-light-grey w3-round">
+        <div class="w3-container w3-round-xlarge w3-green" style="width: 0%" id="progressbar-percent">
+          <span id="progressbar-text">0 %</span>
+        </div>
+      </div>
+
+        <p id="text-hidden">Searching for uptime stats...</p>
+
+        <br>
+        
+        <div class="w3-light-grey w3-round progressbar-hidden">
+          <div class="w3-container w3-round-xlarge w3-green progressbar-percent" style="width: 0%" id="">
+            <span id="progressbar-seconds">0%</span>
+          </div>
+        </div>
+
+        <br>
+        
+        <div class="w3-light-grey w3-round progressbar-hidden">
+          <div class="w3-container w3-round-xlarge w3-green progressbar-percent" style="width: 0%" id="">
+            <span id="progressbar-hours">0%</span>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="w3-light-grey w3-round progressbar-hidden">
+          <div class="w3-container w3-round-xlarge w3-green progressbar-percent" style="width: 0%" id="">
+            <span id="progressbar-days">0%</span>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="w3-light-grey w3-round progressbar-hidden">
+          <div class="w3-container w3-round-xlarge w3-green progressbar-percent" style="width: 0%" id="">
+            <span id="progressbar-weeks">0%</span>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="w3-light-grey w3-round progressbar-hidden">
+          <div class="w3-container w3-round-xlarge w3-green progressbar-percent" style="width: 0%" id="">
+            <span id="progressbar-months">0%</span>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="w3-light-grey w3-round progressbar-hidden">
+          <div class="w3-container w3-round-xlarge w3-green progressbar-percent" style="width: 0%" id="">
+            <span id="progressbar-years">0%</span>
+          </div>
+        </div>
+
+      <h5 class="w3-padding-32">Please await further instructions...</h5>
+
+      <p class="w3-text-grey">The human-offspring-compendium is being converted into photons as we speak and shoud be beamed to you at any moment.</p>
+      <p class="w3-text-grey">Arrival of the photons depend on factors such as, distance to your location from beaming station, the neutino density along the path and the mood of said photons. In addition, bio-photons don't work on Mondays. </p>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-display-container img-baby">
+        <div class="w3-display-middle">
+          <img src="graphics/Baby-100.png" class="" alt="" title="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="Grid2">
+  <div class="w3-content">
+    <div class="w3-third">
+      <h3 class="w3-padding-32">When, when, when?</h3>
+      <p>The arrival ceremony is expected to take place on the time specified. However, changes may occur at any time. Although time-data is provided, space-data is unfortunetly not, as you did not pay for the premium package, which admittedly is not available in your region.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <h3 class="w3-padding-32">Countdown to baby</h3>
+        <span id="countDownToBaby"></span>
+
+        <script src="js/countDownTimer.js"></script>
+    </div>
+
+    <div class="w3-third">
+      <time datetime="2017-09-11" class="icon">
+        <em>Wednesday</em>
+        <strong>September</strong>
+        <span>06</span>
+      </time>
+    </div>
+
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="Grid3">
+  <div class="w3-content">
+    <div class="w3-center">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+            <img src="graphics/UL1_2017-02-28.jpg" style="width:100%">
+          <div class="text">Le minion -1-</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+            <img src="graphics/UL2_2017-02-28.jpg" style="width:100%">
+          <div class="text">Le minion -2-</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+            <img src="graphics/UL3_2017-02-28.jpg" style="width:100%">
+          <div class="text">Le minion -3-</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+            <img src="graphics/UL4_2017-02-28.jpg" style="width:100%">
+          <div class="text">Le minion non-selfie</div>
+        </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+        <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <script src="js/slideShow.js"></script>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-center w3-opacity w3-padding-64">
+     <div class="w3-panel w3-leftbar old-lace">
+      <p class="w3-xxlarge w3-serif">
+      <i>Get rich, or die trying.</i></p>
+      <p>50 cent</p>
+    </div> 
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo" target="_blank" title=""><i class="fa fa-css3" aria-hidden="true"></i></i></a>
+   <a href="#" class="w3-hover-text-red" target="_blank" title=""><i class="fa fa-html5" aria-hidden="true"></i></a>
+   <a href="#" class="w3-hover-text-light-blue" target="_blank" title=""><img src="graphics/JS-32.png"></a>
+   <a href="#" class="w3-hover-text-grey" target="_blank" title=""></a>
+   <a href="#" class="w3-hover-text-indigo" target="_blank" title=""></a>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> | <a href="https://icons8.com" target="_blank">Icon pack by Icons8</a> | <a href="https://www.sitepoint.com/create-calendar-icon-html5-css3/" target="_blank">HTML 5 &amp; CSS 3 calender</a></p>
+</footer>
+
+  <script src="js/w3-menu.js"></script>
+
+</body>
+</html>
