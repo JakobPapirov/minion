@@ -8,5 +8,5 @@ Over at the learning section of the website I'm now working on svg-games (my way
 ## Learning
 As my minion isn't three yet, the difficulty of the learning material is at that level. I'm trying to train her to use the mouse, logical thinking and more.
 
-# Tech
+## Tech
 The website is written in HTML. W3.CSS is used as well as jQuery (JS). Icons from icons8.
