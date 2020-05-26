@@ -1,0 +1,23 @@
+/* Applying main CSS-grid */
+	/* Main Content */
+	.grid {
+			width: 100%;
+			display: grid;
+			grid-template-rows: repeat(5, minmax(200px, auto) ); /* = 5 */
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1em;
+		}
+
+/* Positioning the grid items (boxes/areas) */
+	#grid-cell-1 {
+		grid-area: 1/1/2/2; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+	}
+	#grid-cell-2 {
+		grid-area: 1/2/2/3;
+	}
+	#grid-cell-3 {
+		grid-area: 1/3/2/4;
+	}
+	#grid-cell-4 {
+		grid-area: 1/4/2/5;
+	}

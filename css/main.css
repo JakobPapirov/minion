@@ -1,0 +1,150 @@
+body {
+	padding-top: 75px;
+	background-color: #aba2a2;
+}
+.container {
+	max-width: 100%;
+	padding: 30px 30px 0px 30px;
+	margin: auto;
+}
+.row {
+	min-height: 300px;
+}
+.col-md-12 {
+	width: 100%;
+}
+.col-md-4 {
+	width: 33.33%;
+	float: left;
+	margin: 20px;
+}
+.week {
+	color: black;
+	font-weight: 600;
+}
+button {
+	width: 75%;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 14px 40px;
+	margin: auto;
+	cursor: crosshair;
+	background-color: green;
+	color: white;
+	border: none;
+	border-radius: 25%;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+button:hover {
+	background-color: red; /* Green */
+    color: black;
+}
+button::first-letter {
+	color: #903;
+  	float: left;
+  	font-family: Georgia;
+  	font-size: 75px;
+  	line-height: 60px;
+  	padding-top: 4px;
+  	padding-right: 8px;
+  	padding-left: 3px;
+}
+#countDownToBaby {
+	color: #3D764D;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	top: 50%;
+	left: 50%
+}
+	/* Slideshow =====================*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 50%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

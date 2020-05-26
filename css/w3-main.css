@@ -1,0 +1,180 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", sans-serif;
+}
+.w3-bar,
+h1,
+button {
+	font-family: "Montserrat", sans-serif;
+}
+button a {
+	text-decoration: none;
+}
+#progressbar-text {
+	color: black;
+	font-weight: 400;
+}
+#progress-button {
+  margin-top: 20px;
+  padding: 5px;
+}
+.img-baby {
+	min-height: 300px;
+}
+#countDownToBaby {
+	color: #4CAF50;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	top: 50%;
+	left: 50%
+}
+	/* Calender icon ================*/
+time.icon {
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: relative;
+  left: 50%;
+  margin-top: 5em;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+}
+time.icon * {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+time.icon strong {
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+}
+time.icon em {
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+time.icon span {
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+	/* Slideshow =====================*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+	left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 50%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.old-lace {
+	background-color: #f7d99f;
+}
+
+/* CUSTOM */
+
+  /*#text-hidden {
+    display: block;
+  }*/
